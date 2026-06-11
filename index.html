@@ -1,27 +1,263 @@
 
-<p>
-Privacy Policy for AnimalRiddleKids
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Privacy Policy | Quizzy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-Last updated: Juni 2026
+        body {
+            background: linear-gradient(145deg, #e9f5f0 0%, #d4e9e2 100%);
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', system-ui, -apple-system, sans-serif;
+            line-height: 1.55;
+            color: #1a2c2a;
+            padding: 2rem 1rem;
+        }
 
-1. Introduction 
-   Welcome to "AnimalRiddleKids" (the "App"). We are committed to protecting the privacy of our young users and their parents.
-   This Privacy Policy explains how we handle information within the App.
-2. Children's Privacy (COPPA & GDPR Compliance) 
-   The App is designed specifically for children. We do not knowingly collect, store, or process any personal data from children
-   under the age of 13 (or any other relevant age under local law).
-3. Data Collection and Usage
-	•	No Server Transfers: The App does not collect any personal information, and it does not transmit any data to external
-	servers or third parties.
-	•	Local Storage Only: To provide a personalized game experience, the App allows the user to enter a player name and select
-	a preferred language. This information is stored locally on your device only (using device preferences) and is used solely 
-	to display the player's name within the game and set the UI language. It never leaves your device.
-4. Third-Party Services and Advertising
-   The App does not include any third-party advertising, analytics tools, or internet-tracking software that could collect data
-   about your usage.
-5. Changes to This Privacy Policy 
-   We may update our Privacy Policy from time to time. Any changes will be posted on this page.
-6. Contact Us 
-   If you have any questions about this Privacy Policy, please contact us at: [ngounounasty@gmail.com]
+        .privacy-container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 2rem;
+            box-shadow: 0 20px 35px -12px rgba(0, 32, 25, 0.15);
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
 
-<p>
+        /* header section */
+        .policy-header {
+            background: #1e3e3a;
+            padding: 2rem 2rem 1.8rem 2rem;
+            text-align: center;
+            border-bottom: 5px solid #f9b43a;
+        }
+
+        .policy-header h1 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+            margin-bottom: 0.5rem;
+            word-break: break-word;
+        }
+
+        .policy-header .app-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(4px);
+            padding: 0.3rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            color: #f9e0a8;
+            margin-top: 0.5rem;
+        }
+
+        .last-updated {
+            background: #fef6e0;
+            padding: 0.7rem 1.8rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #7a5a2c;
+            border-bottom: 1px solid #e9e0cc;
+            font-weight: 500;
+        }
+
+        /* main content */
+        .policy-content {
+            padding: 2rem 2rem 2.5rem 2rem;
+        }
+
+        .policy-section {
+            margin-bottom: 2rem;
+            border-left: 4px solid #f9b43a;
+            padding-left: 1.5rem;
+            transition: all 0.15s;
+        }
+
+        .policy-section h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #1f4e47;
+            margin-bottom: 0.75rem;
+            letter-spacing: -0.2px;
+        }
+
+        .policy-section h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2d5f57;
+            margin: 1rem 0 0.4rem 0;
+        }
+
+        .policy-section p {
+            margin-bottom: 0.9rem;
+            font-size: 1rem;
+            color: #2c3e3a;
+        }
+
+        .policy-section ul {
+            margin: 0.6rem 0 0.8rem 1.6rem;
+            list-style-type: none;
+        }
+
+        .policy-section li {
+            margin-bottom: 0.6rem;
+            position: relative;
+            padding-left: 1.3rem;
+            font-size: 0.98rem;
+        }
+
+        .policy-section li::before {
+            content: "•";
+            color: #f9b43a;
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        .highlight-box {
+            background: #faf8ef;
+            border-radius: 1.2rem;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0 1rem 0;
+            border: 1px solid #e9e0c8;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0.3rem;
+        }
+
+        .contact-email {
+            background: #eef4f2;
+            display: inline-block;
+            padding: 0.35rem 1.1rem;
+            border-radius: 40px;
+            font-family: monospace;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #146b5e;
+            margin-top: 0.2rem;
+            border: 1px solid #cddfda;
+            word-break: break-all;
+        }
+
+        hr {
+            margin: 1.6rem 0;
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, #e0d6c0, #c7d9d2, #e0d6c0);
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 0.78rem;
+            color: #6a827c;
+            margin-top: 2rem;
+            border-top: 1px solid #e2eae6;
+            padding-top: 1.5rem;
+        }
+
+        @media (max-width: 640px) {
+            .policy-content {
+                padding: 1.5rem;
+            }
+            .policy-section {
+                padding-left: 1rem;
+            }
+            .policy-section h2 {
+                font-size: 1.4rem;
+            }
+            .policy-header h1 {
+                font-size: 1.7rem;
+            }
+        }
+
+        /* simple accessibility & focus */
+        a:focus, .policy-section:focus-within {
+            outline: 2px solid #f9b43a;
+            outline-offset: 2px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+<div class="privacy-container">
+    <div class="policy-header">
+        <h1>🔐 Privacy Policy</h1>
+        <div class="app-badge">🐾 Quizzy — made for families</div>
+    </div>
+    <div class="last-updated">
+        📅 Last updated: June 2026
+    </div>
+
+    <div class="policy-content">
+        <!-- 1. Introduction -->
+        <div class="policy-section">
+            <h2>1. Introduction</h2>
+            <p>Welcome to <strong>Quizzy</strong> (the "App"). We are committed to protecting the privacy of our young users and their parents. This Privacy Policy explains how we handle information within the App — with transparency and child safety as our top priorities.</p>
+        </div>
+
+        <!-- 2. Children's Privacy (COPPA & GDPR) -->
+        <div class="policy-section">
+            <h2>2. Children's Privacy</h2>
+            <p><strong>COPPA & GDPR compliant design.</strong> The App is designed specifically for children. We do <strong>not</strong> knowingly collect, store, or process any personal data from children under the age of 13 (or any other relevant age under local law).</p>
+            <div class="highlight-box">
+                <p>✅ No personal identifiers are ever transmitted</p>
+                <p>✅ No behavioral tracking or profiling</p>
+                <p>✅ Completely offline-first architecture</p>
+            </div>
+        </div>
+
+        <!-- 3. Data Collection and Usage -->
+        <div class="policy-section">
+            <h2>3. Data Collection and Usage</h2>
+            <ul>
+                <li><strong>No Server Transfers:</strong> The App does not collect any personal information, and it does not transmit any data to external servers or third parties.</li>
+                <li><strong>Local Storage Only:</strong> To provide a personalized game experience, the App allows the user to enter a player name and select a preferred language. This information is stored locally on your device only (using device preferences) and is used solely to display the player's name within the game and set the UI language. It never leaves your device.</li>
+            </ul>
+            <p>📱 Everything stays on your device — no cloud, no servers, no surprise data sharing.</p>
+        </div>
+
+        <!-- 4. Third-Party Services and Advertising -->
+        <div class="policy-section">
+            <h2>4. Third-Party Services & Advertising</h2>
+            <p>The App does <strong>not</strong> include any third-party advertising, analytics tools, or internet-tracking software that could collect data about your usage. No SDKs, no trackers, no hidden telemetry.</p>
+            <div class="highlight-box" style="background:#f4f9f7;">
+                <p>🚫 Zero third-party libraries with network permission</p>
+                <p>🚫 No ads, no analytics, no push notification services</p>
+            </div>
+        </div>
+
+        <!-- 5. Changes to This Privacy Policy -->
+        <div class="policy-section">
+            <h2>5. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time to reflect improvements or clarify our practices. Any changes will be posted on this page, and the "Last updated" date at the top will be revised. We encourage parents to review this document periodically.</p>
+        </div>
+
+        <!-- 6. Contact Us -->
+        <div class="policy-section">
+            <h2>6. Contact Us</h2>
+            <p>If you have any questions, concerns, or suggestions about this Privacy Policy — or if you simply want to say hello — please reach out to our privacy guardian team:</p>
+            <div class="contact-email">
+                📧 ngounounasty@gmail.com
+            </div>
+            <p style="margin-top: 0.8rem; font-size: 0.9rem;">We aim to respond within 2 business days.</p>
+        </div>
+
+        <div class="footer-note">
+            Quizzy · made with care for curious young minds<br>
+            This policy applies exclusively to the Quizzy mobile app.
+        </div>
+    </div>
+</div>
+</body>
+</html>
+```
